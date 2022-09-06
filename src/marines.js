@@ -180,7 +180,7 @@ const marine = [
   },
   {
     difficulty: 10,
-    marine_name: "Rob Lucci",
+    marine_name: "Rob Pucci",
     name: "Unknown",
     bounty: "1 250 100 000",
     status: "Cp0 Agent",
