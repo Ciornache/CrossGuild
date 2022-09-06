@@ -1,0 +1,602 @@
+body {
+  margin: 0;
+  background: #f2f2f7 30%;
+}
+/* Navbar Css*/
+.logoCl {
+  width: 800px;
+  height: 400px;
+}
+.mark {
+  position: absolute;
+  height: 10vh;
+  width: 2.5vw;
+  display: inline-block;
+  transform: translate(40px);
+}
+.bounty-btn p {
+  font-weight: bold;
+  position: relative;
+  font-size: 1.3rem;
+}
+.bounty-btn:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  opacity: 0.5;
+}
+.buggy:last-of-type {
+  margin-right: 30px;
+}
+.bounty-btn {
+  height: inherit;
+  width: auto;
+  border: none;
+  background: transparent;
+  text-align: left;
+  margin-left: 60px;
+  font-size: 50%;
+  display: inline-block;
+  padding-left: 40px;
+  position: relative;
+  transform: translate(0px, -35px);
+}
+.buggy {
+  display: inline-block;
+  height: inherit;
+  width: 155px;
+}
+.buggy:last-of-type {
+  margin-right: 5%;
+}
+.navbar {
+  z-index: 100;
+  width: 123.6vw;
+  height: 10vh;
+  position: sticky;
+  position: -webkit-sticky;
+  background: white;
+  top: 0;
+}
+.searchBar {
+  position: absolute;
+  width: 40vw;
+  height: 6vh;
+  font-size: 200%;
+  font-weight: bolder;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-style: italic;
+  border: 5px solid black;
+  transform: translate(20px, 15px);
+  border-radius: 30px;
+}
+/* Navbar Css*/
+
+/* IniPage Css*/
+.wanted {
+  position: relative;
+  top: 35px;
+  width: 500px;
+  height: 500px;
+  right: 3px;
+}
+.more-btn {
+  color: black;
+  padding: 0;
+  background: transparent;
+  border: none;
+  font-weight: bold;
+}
+.more-btn:hover {
+  cursor: pointer;
+  text-decoration: underline solid;
+}
+.posterImage {
+  width: 300px;
+  height: 200px;
+  position: absolute;
+}
+.w-container {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.posterText {
+  text-align: center;
+  background: transparent;
+  color: black;
+  font-weight: bolder;
+  font-size: 15px;
+  width: 43%;
+  height: 80%;
+  position: relative;
+  left: 200px;
+  bottom: 219px;
+  margin-bottom: 20px;
+  transition: all 0.5s linear;
+}
+.posters {
+  height: 250px;
+  background: white;
+  border-radius: 10px;
+}
+.size {
+  opacity: 1;
+  width: 80%;
+  height: 80%;
+  z-index: 15;
+}
+.chevron {
+  height: 75px;
+  width: 75px;
+}
+.s-size2 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 135px;
+  height: 54.5vh;
+  position: absolute;
+  background: white;
+  border: 5px solid black;
+  bottom: 0px;
+  left: 1280px;
+  z-index: 14;
+}
+.bsArrow {
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.bsArrow:hover {
+  cursor: pointer;
+}
+.chevron-button:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+.chevron-button {
+  background: transparent;
+  border: none;
+}
+.s-size {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 135px;
+  height: 54.5vh;
+  position: absolute;
+  background: white;
+  border: 5px solid black;
+  bottom: 0px;
+  z-index: 14;
+}
+.m-text {
+  display: block;
+  top: -63px;
+  position: relative;
+}
+.members {
+  margin: 0;
+  background: white;
+  border: 1px solid black;
+  width: 60%;
+  height: 500px;
+  position: relative;
+  left: 450px;
+  top: 100px;
+  font-size: 65px;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 15px;
+  overflow: hidden;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+}
+.wanted-text p {
+  position: relative;
+  bottom: 33px;
+  left: 10px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.wanted-text {
+  transform: translate(0px, 230px);
+  position: absolute;
+  font-weight: bolder;
+  font-size: 35px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #2a1601;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.lastSlide {
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  opacity: 0;
+}
+.members img {
+  -webkit-transition: var(--transition);
+  transition: all 0.5s linear;
+}
+.pls {
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+.allSlides {
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(120%);
+  opacity: 0;
+}
+.postersCont {
+  justify-content: center;
+  row-gap: 100px;
+  column-gap: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 400px);
+  margin-top: 250px;
+}
+.box {
+  width: 390px;
+  height: 37px;
+  background: black;
+  box-shadow: 0px 0px 0px 7px red;
+  position: relative;
+  color: white;
+  bottom: 232px;
+  left: 5px;
+}
+.box:hover {
+  cursor: pointer;
+  background: #ffba00;
+  box-shadow: 0px 0px 0px 7px #f78702;
+  color: black;
+  border: none;
+}
+.posterText button {
+  text-align: center;
+}
+.loadMore {
+  display: block;
+  position: absolute;
+  height: 100px;
+  width: 300px;
+  margin-top: 100px;
+  margin-left: 1050px;
+  font-size: 30px;
+  border: 10px solid black;
+  font-weight: bolder;
+  background: rgba(221, 191, 146, 255);
+  letter-spacing: 2px;
+  border-radius: 50px;
+  transform: translate(0px, -20px);
+}
+.loadMore:hover {
+  background: #f2f2f7;
+  cursor: pointer;
+}
+.select {
+  height: 5vh;
+  width: 10vw;
+  font-size: 30px;
+  text-align: left;
+}
+.sortby {
+  font-weight: bolder;
+  height: 5vh;
+  width: 23vw;
+  position: absolute;
+  transform: translate(1920px, 150px);
+  font-size: 40px;
+}
+.dropdown {
+  background: red;
+  width: 100%;
+  height: 50%;
+  font-size: 15px;
+  position: absolute;
+  font-weight: bolder;
+}
+option:hover {
+  background-color: red;
+}
+.dropdown:hover {
+  display: block;
+}
+.class {
+  background: red;
+  height: 200px;
+  width: 200px;
+}
+.spp {
+  height: 230px;
+  width: 100px;
+  background: transparent;
+}
+.line-5 {
+  height: 5px;
+  width: 100%;
+  background: black;
+  position: relative;
+  top: 170px;
+  margin-bottom: 50px;
+}
+/* IniPage Css*/
+
+/* login / register */
+.mainComp {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: space-between;
+}
+.credentials {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  margin-right: 0px;
+  align-items: center;
+}
+.register:before {
+  content: "Register Now!";
+  font-size: x-large;
+  color: black;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  margin: 193px;
+  position: relative;
+  transform: translate(0px, 20px);
+}
+.register-label {
+  margin-left: 20px;
+  display: block;
+  font-size: x-large;
+  color: black;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+.register-label2 {
+  margin-left: 20px;
+  display: block;
+  font-size: x-large;
+  color: white;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+.form-1 {
+  display: flex;
+  height: 47vh;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.register-input {
+  width: 12.5vw;
+  background: transparent;
+  border: none;
+  color: #8a0707;
+  outline: none;
+  margin-left: 20px;
+  font-size: x-large;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+.register-input:focus {
+  border-bottom: black solid;
+}
+.register-input::placeholder {
+  font-style: italic;
+  color: #8a0707;
+}
+.register {
+  height: 55vh;
+  width: 30vw;
+  border-radius: 10px;
+  background-color: #5f6f94;
+  margin-right: 50px;
+}
+.mainComp img {
+  width: 40vw;
+}
+.register-input:nth-of-type(n + 1) {
+  margin-bottom: 10px;
+}
+.register-label {
+  margin-bottom: 10px;
+}
+.lb {
+  margin-left: 30px;
+}
+.lb2 {
+  margin-bottom: 0px;
+  position: relative;
+  transform: translate(30px, -23px);
+}
+.separator {
+  height: 43.5vh;
+  background: black;
+  width: 5px;
+  flex-shrink: 3;
+  align-self: flex-end;
+}
+.separator2 {
+  height: 790px;
+  background: black;
+  flex-shrink: 3;
+  width: 5px;
+  transform: rotate(90deg);
+  align-self: flex-end;
+}
+.go {
+  flex-direction: column;
+}
+.go2 {
+  align-self: center;
+  margin-right: -10px;
+  margin-bottom: 130px;
+}
+.phoneNumber {
+  padding-left: 25px;
+  background: url("http://cdn.onlinewebfonts.com/svg/img_212213.png") no-repeat
+    left;
+  background-size: 20px;
+}
+.email {
+  padding-left: 25px;
+  background: url("https://assets.stickpng.com/images/584856bce0bb315b0f7675ad.png")
+    no-repeat left;
+  background-size: 20px;
+}
+.username {
+  padding-left: 25px;
+  background: url("http://cdn.onlinewebfonts.com/svg/img_401900.png") no-repeat
+    left;
+  background-size: 20px;
+}
+.bseye {
+  position: absolute;
+  transform: translate(0px, 7px);
+}
+.bseye:hover {
+  cursor: pointer;
+}
+.btn-submit {
+  opacity: 1;
+  align-self: end;
+  transform: translate(-335px);
+  background: transparent;
+  border: none;
+  font-size: x-large;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+.btn-submit:hover {
+  border-radius: 15px;
+  border: 10px black solid;
+  opacity: 0.6;
+  cursor: pointer;
+  background: red;
+  transition: 0.5s;
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 20vw;
+  background: #2d2926ff;
+}
+.register-input2 {
+  width: 12.5vw;
+  background: transparent;
+  color: #e94b3cff;
+  outline: none;
+  margin-left: 20px;
+  font-size: x-large;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+.register-input2:focus {
+  border-bottom: #e94b3cff;
+}
+.register-input2::placeholder {
+  font-style: italic;
+  color: #e94b3cff;
+}
+.login-btn {
+  width: 10vw;
+  height: 10vh;
+  background: transparent;
+  align-self: center;
+  font-size: x-large;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  color: #e94b3cff;
+  border: none;
+  transition: all 0.3s 0.2s;
+}
+.login-btn:hover {
+  font-size: xx-large;
+  background: #08e8de;
+  border: black 5px solid;
+  cursor: pointer;
+}
+.form-2 {
+  display: flex;
+  height: auto;
+  width: auto;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+/* login / register */
+/*
+.crocodile {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  bottom: 208px;
+  left: -130px;
+  border-radius: 30px;
+}
+.mihawk {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  bottom: 208px;
+  left: 210px;
+  border-radius: 30px;
+}
+.doflamingo {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  bottom: 110px;
+  left: 196px;
+  border-radius: 30px;
+}
+.buggy {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  bottom: 310px;
+  left: 301px;
+  border-radius: 30px;
+}
+.line2 {
+  height: 350px;
+  width: 20px;
+  background: black;
+  position: absolute;
+  bottom: 305px;
+  left: 345px;
+  transform: rotate(-45deg);
+}
+.line {
+  height: 350px;
+  width: 20px;
+  background: black;
+  position: absolute;
+  bottom: 305px;
+  left: 350px;
+  transform: rotate(45deg);
+}
+.cl {
+  font-family: serif;
+  font-size: 100px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 20px;
+}
+*/
