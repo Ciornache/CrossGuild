@@ -16,6 +16,7 @@ const Login = () => {
                 type="text"
                 placeholder="Type Here..."
                 className="register-input phoneNumber"
+                name="phone-number"
               ></input>
               <label className="register-label"> Email Address</label>
               <input
@@ -23,6 +24,7 @@ const Login = () => {
                 type="text"
                 placeholder="Type Here..."
                 className="register-input email"
+                name="email-adress"
               ></input>
               <label className="register-label"> Birth Date </label>
               <input
@@ -30,13 +32,14 @@ const Login = () => {
                 type="date"
                 placeholder="Type Here..."
                 className="register-input"
+                name="birth-date"
               ></input>
               <label className="register-label"> Sex </label>
               <div>
                 <input
                   type="radio"
                   id="huey"
-                  name="drone"
+                  name="genderM"
                   value="huey"
                   className="lb"
                 ></input>
@@ -48,7 +51,7 @@ const Login = () => {
                 <input
                   type="radio"
                   id="dewey"
-                  name="drone"
+                  name="genderF"
                   value="dewey"
                   className="lb"
                 ></input>
@@ -66,8 +69,8 @@ const Login = () => {
                 type="text"
                 placeholder="Type Here..."
                 className="register-input username"
+                name="username"
               ></input>
-
               <label className="register-label"> Password </label>
               <BsEye
                 className="bseye"
@@ -99,7 +102,7 @@ const Login = () => {
           </form>
         </div>
         <div className="login">
-          <form className="form-2">
+          <form className="form-2" action="connection.php" method="post">
             <label for="username" className="register-label2">
               Username:
             </label>
@@ -108,26 +111,31 @@ const Login = () => {
               type="text"
               placeholder="Type Here..."
               className="register-input2 username"
+              name="reg-usermanem"
             ></input>
             <label for="username" className="register-label2">
               Password:
             </label>
             <input
               id="phone-number"
-              type="text"
+              type="password"
               placeholder="Type Here..."
               className="register-input2 username"
+              name="reg-password"
             ></input>
             <label for="username" className="register-label2">
-              New Password:
+              Confirm Password:
             </label>
             <input
               id="phone-number"
-              type="text"
+              type="password"
               placeholder="Type Here..."
               className="register-input2 username"
+              name="reg-newpassword"
             ></input>
-            <button className="login-btn">Log in</button>
+            <button className="login-btn" type="submit">
+              Log in
+            </button>
           </form>
         </div>
       </div>
